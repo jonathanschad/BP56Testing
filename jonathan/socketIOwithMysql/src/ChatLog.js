@@ -7,7 +7,7 @@ class ChatLog extends Component {
     for (let i = 0; i < this.props.chats.length; i++) {
       const element = this.props.chats[i];
       chats.push(
-        <ListItem>
+        <ListItem key={i}>
           <Avatar>
             <Person />
           </Avatar>
